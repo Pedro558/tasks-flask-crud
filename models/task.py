@@ -10,5 +10,6 @@ class Task:
       'id': self.id,
       'title': self.title,
       'description': self.description,
+      'completed': self.completed
     }
 

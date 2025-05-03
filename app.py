@@ -19,7 +19,8 @@ def create_task():
   tasks.append(new_task)
   print(tasks)
   return jsonify({
-    "data": request.get_json()
+    "data": request.get_json(),
+    "id": new_task.id
     })
 
 @app.route('/tasks', methods=['GET'])
